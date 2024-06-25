@@ -3981,7 +3981,8 @@
  *
  * Execute certain G-code commands immediately after power-on.
  */
-//#define STARTUP_COMMANDS "M17 Z"
+// Activate Z steppers, Load mesh, Align Z axis
+#define STARTUP_COMMANDS "M17 Z\nM420 S1\nG34"
 
 /**
  * G-code Macros
